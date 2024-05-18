@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(wallpaperflare.com_wallpaper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  color: #fff;
+  text-transform: capitalize;
+}
+.header .logo {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+}
+.header .navbar .name {
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.navbar .name::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  background: #fff;
+  width: 00%;
+  transition: 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+.navbar {
+  padding-bottom: 80px;
+}
+.myname {
+  cursor: default;
+  font-size: 25px;
+  border: none;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 100px;
+}
+.col {
+  flex-basis: 50%;
+}
+h1 {
+  font-size: 100px;
+  color: #fff;
+  padding-top: 8%;
+  padding-left:40%;
+  cursor: pointer;
+}
+
+p {
+  position: relative;
+  width: 95%;
+  display: flex;
+  color: #fff;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  align-items: center;
+  left: 5%;
+}
+.card {
+  width: 230px;
+  height: 260px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  font-size: 20px;
+}
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 13px;
+}
+img{
+  width: 25%;
+  height: 50%;
+  display: flex;
+  position: relative;
+  left: 68%;
+}
+.content{
+  position: fixed;
+  font-size: 25px;
+  color: #fff;
+  left: 2em;
+  right: 40%;
+  top: 16em;
+  display: flex;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
